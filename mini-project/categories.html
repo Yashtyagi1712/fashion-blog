@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Runway</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/categories.css"> -->
+    <link rel="stylesheet" href="css/categories.css"> 
+    <style>
+      
+.login-image{
+    width:440px;
+    object-fit: cover;
+}
+.login{
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    padding-top:110px;
+}
+.vl{
+    border-left: 1px solid #e85a48;
+    height: 400px;
+  }
+@media screen and (max-width:992px) and (min-width:777px){
+    .vl{
+        height:280px;
+    }
+}
+@media screen and (max-width:778px) and (min-width:591px){
+    .vl{
+        height:200px;
+    }
+}
+@media screen and (max-width:592px) and (min-width:421px){
+    .vl{
+        height:170px;
+    }
+}
+
+@media screen and (max-width:423px){
+    .vl{
+        height:120px;
+    }
+}
+.login-form{
+    text-align: center;
+    padding-bottom: 20px;
+   
+}
+.login-button{
+    display:inline-block;
+    width: 100px;
+    height: 40px;
+    color:#e85a48;
+    border-radius: 4px;
+    background:#ffffff;
+    border:none;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+.login-button:hover{
+    background-color:#eae7dc;
+    
+    
+}
+.back-button{
+    display:inline-block;
+    width: 100px;
+    height: 40px;
+    color:#5d5c61;
+    background: none;
+    border:none;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.back-button:hover{
+    color:#414044;
+}
+
+hr{
+    border: 1px solid #caa529;
+    max-width:70px;
+    margin:auto;
+    
+}
+h4.other-login-op{
+    text-align:center;
+    font-size: 18px;
+    font-weight: 900;
+    color:#5d5c61;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+    
+}
+
+nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: grey;
+            padding: 10px;
+            font-size: larger;
+            
+          }
+          nav li a {
+            text-decoration: none;
+            color: black;
+          }
+          nav li a:hover {
+            color: burlywood;
+          }
+          .image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+}
+.image-text {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 50px;
+  font-size: 18px;
+}
+.follow-us ul li {
+
+list-style: none;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        background-color:  rgba(183, 173, 173,0.3);;
+        padding: 10px;
+        font-size: large;
+        color: black;
+}
+.follow-us a{
+text-decoration: none;
+        color: black;
+      }
+      .div1{
+            background-color: rgba( 186, 176, 176,0.6);
+            
+            color: black;
+            height: 100%;
+            width: 100%;
+            font-size: large;
+            font-style: oblique;
+            /* height: 45%;
+            width: 50%; */ 
+
+          }
+          .div1 p{
+             display: inline-block;
+            align-items: right;
+            height: 50%;
+            width: 51%;
+            font-size: larger;
+            text-align: right;
+           
+          }
+          h1{
+            align-items: center;
+            text-align: center; 
+            font-style: Times New Roman;
+          }
+          h3{
+            align-items: center;
+            text-align: center; 
+            font-style: Times New Roman;
+            font-size: xx-large;
+          }
+          #123{
+             display: inline-block;
+            align-items: right;
+            height: 50%;
+            width: 90%;
+            font-size: larger;
+            text-align: right;
+           
+          }
+          .div5{
+            display: inline-block;
+            align-items: left;
+            height: 100%;
+            width: 60%;
+            font-size: large;
+            text-align: left;
+            background-color: rgba(183, 173, 173,0.5);
+           
+            justify-content: center;
+           padding-block: 2%;
+}
+.div6{
+            display: inline-block;
+            align-items: left;
+            height: 100%;
+            width: 60%;
+            font-size: large;
+            text-align: left;
+            background-color: rgba(183, 173, 173,0.5);
+           
+            justify-content: center;
+           padding-block: 2%;
+}
+    
+          .subscribe-form {
+      background-color: rgba(250, 157, 172, 0.5);
+      border-radius: 25%;
+      padding: 30px;
+      text-align: center;
+    }
+          .div8{
+  
+  display: inline-block;
+  align-items: right;
+  height: 100%;
+ width: 35%;
+ font-size: larger;
+  text-align: left;
+  background-color: rgba(183, 173, 173,0.7);
+  padding: 2%;
+  justify-content: center;
+  padding-block: 2%;
+  }
+  .follow-us ul li {
+
+   list-style: none;
+           display: block;
+           justify-content: space-between;
+           align-items: center;
+           background-color:  rgba(183, 173, 173,0.3);;
+           padding: 10px;
+           font-size: large;
+           color: black;
+  }
+  .follow-us a{
+   text-decoration: none;
+           color: black;
+         }
+
+
+
+
+    </style>
+</head>
+<body>
+  <!-- navbar -->
+    <nav>
+     
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Fashion</a></li>
+        <li><a href="categories.html">Runway</a></li>
+        <li><a href="login.html" id="login">Login</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  <!-- navbar -->
+
+  <div class="div1">
+    <div class="image-container">
+      <img src="https://media.vogue.co.uk/photos/5f6b8ed970eacbfc64c11848/4:3/w_3067,h_2300,c_limit/Dolce&Gabbana_woman%20fashion%20show%20ss21_FINALE%20(5).jpg" alt="Your Image"  width="100%">
+      <div class="image-text">
+        <h1>Welcome to Personal Blog - Your Ultimate Destination for Fashion Inspiration!</h1>
+        <input type="search"  placeholder="search">
+        
+      </div>
+    </div>
+      <br> <br>
+      <!-- <center><h2 class="trends-header">TRENDING NOW</h2></center><br><br>
+      <div class="trends-categories">
+        <a href="products.html"><img src="images/category1.png" alt=""></a>
+        <a href="products.html"><img src="images/category2.png" alt=""></a>
+        <a href="products.html"><img src="images/category3.png" alt=""></a>
+        <a href="products.html"><img src="images/category4.png" alt=""></a>
+        <a href="products.html"><img src="images/category5.png" alt=""></a>
+        <a href="products.html"><img src="images/category6.png" alt=""></a>
+    </div><br><br>
+    <center><h2 class="trends-header">+For Her</h2></center><br><br>
+    <div class="for-her">
+      <a href="products.html"><img src="images/for-her1.png" alt=""></a>
+      <a href="products.html"><img src="images/for-her2.png" alt=""></a>
+    </div><br><br>
+    <center><h2 class="trends-header">+For Him</h2></center><br>
+    <div class="for-him">
+      <a href="products.html"><img src="images/brands-for-him1.png" alt=""></a>
+      <a href="products.html"><img src="images/brands-for-him2.png" alt=""></a>
+      <a href="products.html"><img src="images/brands-for-him3.png" alt=""></a>
+      <a href="products.html"><img src="images/brands-for-him4.png" alt=""></a>
+      <a href="products.html"><img src="images/brands-for-him5.png" alt=""></a>
+    </div> -->
+
+    <div class="div1">
+      <h1> Shop the look</h1>
+    
+      
+      <br>
+    
+       
+    <p1 id="123">
+      Welcome to Shop the Look, where we bring you curated fashion ensembles inspired by the hottest trends and celebrity styles. In this blog, we'll guide you on where to find the key pieces featured in our fashion-forward looks, so you can effortlessly recreate them and express your personal style. From statement accessories to must-have garments, let's dive into the world of fashion and embark on a shopping journey together!
+    </p1>
+
+    <b><h2>Runway-Inspired Looks:</h2></b>
+    <a href="https://www.vogue.com/fashion-shows/fall-2023-ready-to-wear/miu-miu"><img src="https://stylecaster.com/wp-content/uploads/2019/07/paris-fashion-week-couture-28-1.jpg?w=1920&h=1080&crop=1" alt="Error Loading" width="36%" > </a>
+<p>
+
+Springtime Chic: Discover the perfect floral dress, paired with stylish sandals and a straw hat, to embrace the freshness of the season. <br>
+Power Suiting: Find a tailored blazer, matching trousers, and statement heels to exude confidence and sophistication like a boss. <br>
+Athleisure Vibes: Explore comfortable yet fashionable activewear pieces, including leggings, sports bras, and sneakers, for an effortlessly cool look.
+</p><br>
+
+<b><h2>Celebrity Style:</h2></b>
+<a href="https://www.vogue.com/fashion-shows/fall-2023-ready-to-wear/miu-miu"><img src="https://nypost.com/wp-content/uploads/sites/2/2022/01/celebrity.jpg?quality=75&strip=all&w=744" alt="Error Loading" width="36%" > </a>
+<p>
+Red Carpet Glam: Shop the elegant gowns, statement jewelry, and designer accessories inspired by your favorite celebrities' red carpet looks. <br>
+Off-Duty Style: Get inspired by the casual yet chic outfits worn by celebrities during their downtime, and find similar pieces to recreate their looks. </p><br>
+
+ 
+  <b><h2>Accessories:</h2></b>
+  <a href="https://www.vogue.com/fashion-shows/fall-2023-ready-to-wear/miu-miu"><img src="https://cdn.shopify.com/s/files/1/0071/7406/2170/files/accessories-blog_1024x1024.jpg?v=1584702437" alt="Error Loading" width="36%" > </a>
+<p> Summer Essentials: Discover trendy swimwear, breezy dresses, sunglasses, and stylish sandals to stay cool and fashionable during the summer months. <br>
+Cozy Fall/Winter Fashion: Find cozy sweaters, fashionable coats, boots, and accessories to keep you warm and stylish during the colder seasons.</p><br>
+ <b><h2>Affordable Fashion:</h2></b>
+ <a href="https://www.vogue.com/fashion-shows/fall-2023-ready-to-wear/miu-miu"><img src="https://cdn.24.co.za/files/Cms/General/d/8254/e4fb8ad181e84435be4f8546196f22ca.png" alt="Error Loading" width="36%"></a>
+ <p>
+  Budget-Friendly Finds: Discover fashionable pieces at affordable prices, including clothing, accessories, and shoes, without compromising on style.<br>
+  Online Sales and Discounts: Stay updated on the latest sales, promotions, and discount codes from popular fashion retailers to score great deals. <br>
+    </p> <br>
+    <b><h2>Sustainable Fashion:</h2></b>
+    <a href="https://www.vogue.com/fashion-shows/fall-2023-ready-to-wear/miu-miu"><img src="https://thesowell.com/app/uploads/Affordable-Sustainable-Fashion-Brands.png" alt="Error Loading"  width="36%" > </a>
+    <p>Eco-Conscious Brands: Explore fashion brands that prioritize sustainability, ethical practices, and eco-friendly materials, allowing you to shop with a clear conscience.
+     <br>Secondhand Treasures: Find unique and pre-loved fashion pieces from thrift stores, consignment shops, and online marketplaces, promoting a more sustainable approach to shopping.
+      <br>
+       </p> <br>
+
+       <div class="div5">
+        <article>
+        
+          Welcome to Personal Blog, your go-to destination for all things fashion! In this blog, we'll be exploring the hottest trends, sharing style tips and tricks, and keeping you up-to-date with the ever-evolving world of fashion. Get ready to dive into a world of runway-inspired looks, seasonal must-haves, and timeless fashion advice. Let's embark on this stylish journey together!
+        
+          <h3>Trend Reports:</h3>
+          
+        
+        Top Fashion Trends of the Season: A comprehensive guide to the latest trends straight from the runways, including colors, patterns, and silhouettes.
+        Street Style Stars: Spotlighting the fashion-forward individuals who are setting trends on the streets and inspiring our everyday looks.
+         Fashion Week Highlights:Exclusive coverage of the most influential fashion weeks, featuring standout collections and emerging designers.
+          <h3>Seasonal Style Guides:</h3>
+          
+          Spring Fashion Essentials: Essential pieces and styling ideas to embrace the vibrant and fresh spirit of spring.
+          Summer Must-Haves: From breezy dresses to beach-ready accessories, discover the key elements for a stylish summer wardrobe.
+          Fall/Winter Chic: Unveiling cozy yet fashionable outfit ideas for colder months, with a focus on layering and textures.
+          Celebrity Style:
+          
+          Red Carpet Glamour: Breakdowns of celebrity red carpet looks, including style analysis and tips on how to incorporate their looks into your own wardrobe.
+          Celebrity Fashion Icons: Exploring the timeless style of iconic figures who have left a lasting impact on the fashion industry.
+         <h3> Fashion Tips and Tricks:</h3>
+          
+          Closet Essentials: Building a versatile wardrobe with key staple pieces that can be mixed and matched effortlessly.
+          Dressing for Your Body Type: Tips on how to dress to flatter your unique shape and highlight your best features.
+          Accessory Styling: Exploring the power of accessories and how they can elevate any outfit.
+          <h3>Beauty and Fashion:</h3>
+          
+          Makeup and Hair Trends: Exploring beauty looks that complement current fashion trends, including step-by-step tutorials.
+          Skincare Tips for Radiant Skin: Expert advice on maintaining healthy, glowing skin to enhance your overall appearance.
+          <h3>Sustainable Fashion:</h3>
+          
+          Ethical and Eco-Friendly Brands: Showcasing fashion brands that prioritize sustainability, ethical production, and fair trade practices.
+          Thrift Store Finds: Tips for scoring stylish and unique pieces from thrift stores, promoting a more sustainable approach to fashion.
+          Fashion DIYs and Hacks:
+          
+          Upcycling Old Clothes: Creative ideas for breathing new life into your wardrobe by transforming old garments.
+          Style Hacks: Quick and easy tips to upgrade your outfits, from clever styling tricks to repurposing accessories.
+
+   
+      
+  <h3>Affordable Fashion:</h3>
+          
+  Ethical and Eco-Friendly Brands: Showcasing fashion brands that prioritize sustainability, ethical production, and fair trade practices.
+  Thrift Store Finds: Tips for scoring stylish and unique pieces from thrift stores, promoting a more sustainable approach to fashion.
+  Fashion DIYs and Hacks:
+  
+  Upcycling Old Clothes: Creative ideas for breathing new life into your wardrobe by transforming old garments.
+  Style Hacks: Quick and easy tips to upgrade your outfits, from clever styling tricks to repurposing accessories.   <br><a href="https://www.vogue.in">Read more</a><br><br>
+
+
+          <marquee behavior="slide" direction="left" scrollamount="5">
+            <a href="https://www.vogue.in/"><img src="https://assets.vogue.in/photos/60485eb369b9550dcd36b695/master/w_2625,h_3263,c_limit/Vogue%20US%20March%202021%20Cover.jpg" alt="" height="500vh"></a>
+            <a href="https://www.vogue.in"><img src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/518a/3323/53fe/0669/b67b/1b0c/3892/2a35/9571/1c09/1c09.jpeg" alt="" height="500vh"></a>
+            <a href="https://www.vogue.in"><img src="https://assets.vogue.in/photos/5de602176ffadb00085fafb9/master/w_2516,h_3260,c_limit/Kiara%20Advani%20Vogue%20India%20December%202019%20cover%20image.jpg" alt="" height="500vh" ></a>
+            <a href="https://www.vogue.in"><img src="https://pyxis.nymag.com/v1/imgs/163/3db/a7d77513ae7a2ee75b9f9a2a625242bc26-vogue-cover-harry-styles-2.rvertical.w600.jpg" alt=""  height="500vh"></a>
+            <a href="https://www.vogue.in"><img src="https://pyxis.nymag.com/v1/imgs/3d4/ee3/bf8fe4f168aca0cd5aed38c8ae7ddfba1c-VO0421-SG-COVER.rvertical.w600.jpg" alt=""  height="500vh"></a>
+          </marquee>
+       
+        </article>
+        </div>
+
+
+       <div class="div8">
+        <article>
+          <div class="extra">
+            <h2> Catch up on latest trends</h2>
+            
+              <a href="https://www.elle.com/"><img src="https://e1.pxfuel.com/desktop-wallpaper/527/70/desktop-wallpaper-women-shopping-fashion-dresses-shopping-women.jpg" alt="error" width="90%"></a>
+    
+              <h2> Rumours! </h2>
+            
+              <a href="https://www.mygoodtimes.in/entertainment/bollywood/boney-kapoor-rubbishes-rumours-of-arjun-malaika-wedding-in-april/"><img src="https://images.mygoodtimes.in/wp-content/uploads/2019/03/28142123/ARJUN-mALAIKA-e1553782902221.jpg" alt="error" width="90%"></a>
+    
+              <h2> Latest Collabs</h2>
+            
+              <a href="https://theglossarymagazine.com/fashion/new-fashion-collabs-2023/"><img src="https://theglossarymagazine.com/cdn-cgi/image/fit=contain,width=1306/wp-content/uploads/BEYONCE_RENAISSANCE.webp" alt="error" width="90%"></a>
+            
+          </div>
+          
+
+    <div class="follow-us">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/accounts/login/">Instagram</a></li>
+        <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwivgq-LwLX_AhUO7XcKHfX9CswYABAAGgJlZg&ohost=www.google.co.in&cid=CAESa-D23JBrRZ-7IZDSePfQPignDjLakwfLUVqeuubvXZGY_HKvKIcBZwraALP3dA4jTQiNidoA1wR5dOVg5J3mfYb90CrboUNNYgoC3b3Ql2NPXRHizaLtY8lenCmFv2ZxcLX6VlM06c7f5_CL&sig=AOD64_18lpTDwQxjJfoPUo4GGgK2MZsBBg&q&adurl&ved=2ahUKEwjCmqiLwLX_AhWE2qQKHb58ArUQ0Qx6BAgFEAE">Facebook</a></li>
+        <li><a href="https://twitter.com/">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <p>Stay updated with the latest fashion news, trends, and exclusive offers by subscribing to our newsletter.</p>
+      <form>
+        <input type="email" placeholder="Enter your email" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    
+
+  <script type="text/javascript" src="js/nav.js"></script>
+  </body>
+</html>
+
+
+       <!-- <p>Accessories are also an essential part of summer fashion. Wide-brimmed hats, oversized sunglasses, and straw bags are all the rage this season. These accessories not only add a fashionable touch to your look but also provide protection from the sun.</p>
+          <p>Remember, fashion is about expressing your individuality, so feel free to experiment and have fun with your summer outfits. Embrace the vibrant colors, embrace the patterns, and embrace your unique style!</p>
+          <a href="https://www.vogue.in">Read more</a>
+
+         -->
+           <!-- <h3>Summer Fashion Trends 2023</h3>
+  <img src="summer-fashion-trends-2023.jpg" alt="Summer Fashion Trends 2023">
+  <p>Summer is here, and it's time to update your wardrobe with the latest fashion trends. This season, bright colors, bold patterns, and lightweight fabrics are dominating the fashion scene.</p>
+  <p>One of the key trends for summer 2023 is neon colors. Neon green, hot pink, and electric blue are making a statement in both clothing and accessories. Don't be afraid to incorporate these vibrant hues into your outfits for an eye-catching look.</p>
+  <p>Another trend that is ruling the summer runways is floral prints. Whether it's a floral dress, a printed skirt, or a flowy top, florals are a timeless choice for the sunny season. Opt for large, oversized blooms or delicate, dainty patterns, depending on your style.</p> -->
